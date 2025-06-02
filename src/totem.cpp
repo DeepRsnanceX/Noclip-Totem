@@ -81,6 +81,18 @@ class $modify(TotemPlayLayer, PlayLayer) {
         return true;
     }
 
+    void startGame() {
+        PlayLayer::startGame();
+
+        totemIsCooldowned = false;
+    }
+
+    void resetLevel() {
+        PlayLayer::resetLevel();
+
+        totemIsCooldowned = false;
+    }
+
     void destroyPlayer(PlayerObject* player, GameObject* obj) {
         PlayLayer::destroyPlayer(player, obj);
 
