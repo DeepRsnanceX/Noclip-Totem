@@ -1,23 +1,17 @@
-# NoclipTotem
-This is where she makes a mod.
+# Noclip Totem of Undying
+Very simple cosmetic mod that plays Minecraft's ***Totem of Undying*** animation when dying in any level with NoClip on!
+*(There's not much more to it, really.)*
 
-<img src="logo.png" width="150" alt="the mod's logo" />
+## Features and Settings
+In the mod's settings menu, you can customize the mod's features to your liking! Available settings are:
 
-*Update logo.png to change your mod's icon (please)*
+- **Enable Totem Animation**: Enables/Disables the Totem of Undying animation.
+- **Enable Totem SFX**: Enables/Disables the Totem of Undying SFX.
+- **Totem Cooldown**: Allows for customizing the time in-between each run of the animation. AKA, controls how often the animation plays.
+- **Totem Scale**: Allows for customizing the scale of the Totem animation on screen.
 
-## Getting started
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
+***Should*** (Hopefully) work with the Noclip option of any mod menu!
 
-## Build instructions
-For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
-```sh
-# Assuming you have the Geode CLI set up already
-geode build
-```
-
-# Resources
-* [Geode SDK Documentation](https://docs.geode-sdk.org/)
-* [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
-* [Geode CLI](https://github.com/geode-sdk/cli)
-* [Bindings](https://github.com/geode-sdk/bindings/)
-* [Dev Tools](https://github.com/geode-sdk/DevTools)
+### Disclaimer(s)
+- This mod does ***NOT*** aim to replicate/replace the [Totem of Undying](https://github.com/YellowCat98/TotemofUndying-gd) mod made by [Yellowcat98](https://github.com/YellowCat98), neither does it take any code from it. Both mods have entirely different functionalities and purposes, this one's purely cosmetic, while the other mod has fully-fledged mechanics and stats.
+- Might not work with the vanilla Ignore Damage option but who REALLY uses that c'mon. 

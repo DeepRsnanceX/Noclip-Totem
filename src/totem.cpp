@@ -76,11 +76,13 @@ class $modify(TotemPlayLayer, PlayLayer) {
         auto fields = m_fields.self();
         auto winSize = CCDirector::sharedDirector()->getWinSize();
 
-        fields->totemAnimationSprite->setPosition({winSize.width / 2, winSize.height / 2});
-        fields->totemAnimationSprite->setID("totem-animation"_spr);
-        fields->totemAnimationSprite->setScale(totemScale);
+        if (doTotemAnim) {
+            fields->totemAnimationSprite->setPosition({winSize.width / 2, winSize.height / 2});
+            fields->totemAnimationSprite->setID("totem-animation"_spr);
+            fields->totemAnimationSprite->setScale(totemScale);
 
-        this->addChild(fields->totemAnimationSprite, 1000);
+            this->addChild(fields->totemAnimationSprite, 1000);
+        }
 
         return true;
     }
