@@ -7,15 +7,16 @@
 		"ios": "2.2074"
 	},
 	"settings": {
-		"noclip-totem": {
-			"type": "title",
-			"name": "Totem of Undying animation",
-			"description": "Settings for the Totem animation when dying with noclip on."
-		},
 		"enable-totem": {
 			"type": "bool",
-			"name": "Enable Totem Animation",
+			"name": "Play Totem Animation",
 			"description": "Enable the totem animation when dying with noclip on.",
+			"default": true
+		},
+		"play-sfx": {
+			"type": "bool",
+			"name": "Play Totem SFX",
+			"description": "Enable playing the Totem Sound Effect when the animation plays.",
 			"default": true
 		},
 		"totem-cooldown": {
@@ -30,7 +31,7 @@
 			"type": "float",
 			"name": "Totem Scale",
 			"description": "The scale of the totem animation on screen. Higher scale means bigger totem. Around 2.7 mimics the size of the Vanilla animation.",
-			"default": 1.0,
+			"default": 1.5,
 			"min": 0.3,
 			"max": 4.0
 		}

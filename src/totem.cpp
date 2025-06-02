@@ -8,6 +8,7 @@ using namespace geode::prelude;
 auto doTotemAnim = Mod::get()->getSettingValue<bool>("enable-totem");
 auto totemCooldown = Mod::get()->getSettingValue<double>("totem-cooldown");
 auto totemScale = Mod::get()->getSettingValue<double>("totem-scale");
+auto totemSound = Mod::get()->getSettingValue<bool>("play-sfx");
 
 $on_mod(Loaded){
     listenForSettingChanges("enable-totem", [](bool value) {
@@ -18,6 +19,9 @@ $on_mod(Loaded){
     });
     listenForSettingChanges("totem-scale", [](float value) {
         totemScale = value;
+    });
+    listenForSettingChanges("play-sfx", [](bool value) {
+        totemSound = value;
     });
 }
 
@@ -96,17 +100,20 @@ class $modify(TotemPlayLayer, PlayLayer) {
     void destroyPlayer(PlayerObject* player, GameObject* obj) {
         PlayLayer::destroyPlayer(player, obj);
 
-        if (obj != m_anticheatSpike && !totemIsCooldowned && doTotemAnim) {
+        if (obj != m_anticheatSpike && !totemIsCooldowned) {
             if (m_player1->m_isDead) return;
-
-            totemIsCooldowned = true;
-            this->scheduleOnce(schedule_selector(NCTotem::cooldownTotem), totemCooldown);
 
             auto fmod = FMODAudioEngine::sharedEngine();
 
-            // call anim here
-            TotemPlayLayer::startTotemAnim();
-            fmod->playEffect("totemUse.ogg"_spr);
+            if (doTotemAnim) {
+                totemIsCooldowned = true;
+                this->scheduleOnce(schedule_selector(NCTotem::cooldownTotem), totemCooldown);
+                TotemPlayLayer::startTotemAnim();
+            }
+            if (totemSound) {
+                fmod->playEffect("totemUse.ogg"_spr);
+            }
+
         }
     }
 };
