@@ -15,3 +15,4 @@ In the mod's settings menu, you can customize the mod's features to your liking!
 ### Disclaimer(s)
 - This mod does <cr>NOT</c> aim to replicate/replace the <cf>Totem of Undying</c> mod made by <cy>Yellowcat98</c>, neither does it take any code from it. Both mods have entirely different functionalities and purposes, this one's purely cosmetic, while the other mod has fully-fledged mechanics and stats.
 - Might not work with the vanilla Ignore Damage option but who REALLY uses that c'mon. 
+- *This is a silly mod that i didn't even intend to make public don't expect much support*

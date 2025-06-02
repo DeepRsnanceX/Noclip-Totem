@@ -10,8 +10,9 @@ In the mod's settings menu, you can customize the mod's features to your liking!
 - **Totem Cooldown**: Allows for customizing the time in-between each run of the animation. AKA, controls how often the animation plays.
 - **Totem Scale**: Allows for customizing the scale of the Totem animation on screen.
 
-***Should*** (Hopefully) work with the Noclip option of any mod menu!
+***Should*** (Hopefully) work with the Noclip setting in **most** mod menus! Tested ones are MegaHack and Eclipse.
 
 ### Disclaimer(s)
 - This mod does ***NOT*** aim to replicate/replace the [Totem of Undying](https://github.com/YellowCat98/TotemofUndying-gd) mod made by [Yellowcat98](https://github.com/YellowCat98), neither does it take any code from it. Both mods have entirely different functionalities and purposes, this one's purely cosmetic, while the other mod has fully-fledged mechanics and stats.
-- Might not work with the vanilla Ignore Damage option but who REALLY uses that c'mon. 
+- Might not work with the vanilla Ignore Damage option but who REALLY uses that c'mon
+- *This is a silly mod that i didn't even intend to make public don't expect much support*
