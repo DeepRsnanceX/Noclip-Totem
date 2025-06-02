@@ -105,9 +105,12 @@ class $modify(TotemPlayLayer, PlayLayer) {
 
             auto fmod = FMODAudioEngine::sharedEngine();
 
-            if (doTotemAnim) {
+            if (doTotemAnim || totemSound) {
                 totemIsCooldowned = true;
                 this->scheduleOnce(schedule_selector(NCTotem::cooldownTotem), totemCooldown);
+            }
+
+            if (doTotemAnim) {
                 TotemPlayLayer::startTotemAnim();
             }
             if (totemSound) {
